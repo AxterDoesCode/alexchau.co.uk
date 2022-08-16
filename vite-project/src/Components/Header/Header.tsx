@@ -9,7 +9,7 @@ export default function Header(){
   }
 
   return(
-      <header>
+    <header>
       <nav className="header--nav">
         <Link to="/" className="nav--link current" onClick={changeActiveLink}>Home</Link>
         <Link to="about" className="nav--link" onClick={changeActiveLink}>About</Link>

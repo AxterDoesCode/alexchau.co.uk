@@ -22,46 +22,6 @@ h1, p{
     color: #F0F2F8;
 }
 
-
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:"blank nav name";
-    padding: 2em;
-    align-items: center;
-    height: 10%;
-}
-
-.header--name{
-    grid-area: name;
-    font-size: 1.2rem;
-    font-weight: 700;
-    display: flex;
-    justify-self: end;
-    font-family: 'Lobster Two', cursive;
-}
-
-.header--nav{
-    justify-self: center;
-    grid-area: nav;
-    width: fit-content;
-    padding: .5em 1em;
-    display: flex;
-    gap: 1.5em;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #30363D;
-    border-radius: 2em;
-}
-
-.nav--link{
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #F0F2F8;
-}
-
-.nav--link:hover{
-    color: #7C7E83;
+main{
+    height: 90%;
 }
