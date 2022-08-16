@@ -1,0 +1,19 @@
+.home--title{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+
+.home--h1{
+    margin: 0;
+}
+
+.home--name{
+    font-family: 'Lobster Two', cursive;
+    color: var(--accent);
+    font-size: 1.3em;
+}
