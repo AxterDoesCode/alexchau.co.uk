@@ -1,5 +1,6 @@
 import styled from "styled-components/macro"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+import linkData from "./linkData.json"
 
 const StyledNav = styled.nav`
     justify-self: center;
@@ -33,17 +34,17 @@ const StyledNav = styled.nav`
 `
 export default function Nav(){
 
-    function changeActiveLink(e: any){
-        document.querySelector(".current")?.classList.remove("current")
-        e.target.classList.add("current")
-    }
+    const currentPath = useLocation().pathname
+
+    const linkArray = linkData.map((data, index)=> {
+        return(
+            <Link to={data.url} key={index} className={`nav--link ${currentPath === data.url? "current": ""}`}>{data.name}</Link>
+        )
+    })
 
     return(
         <StyledNav>
-            <Link to="/" className="nav--link current" onClick={changeActiveLink}>Home</Link>
-            <Link to="about" className="nav--link" onClick={changeActiveLink}>About</Link>
-            <Link to="projects" className="nav--link" onClick={changeActiveLink}>Projects</Link>
-            <Link to="contact" className="nav--link" onClick={changeActiveLink}>Contact</Link>  
+            {linkArray}
         </StyledNav>
     )
 }
