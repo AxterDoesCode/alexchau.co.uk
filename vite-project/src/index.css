@@ -4,7 +4,10 @@
 
 :root{
     --dark: #090C10;
+    --dark--hover: #21262D;
     --accent: #80ff72;
+    --light: #F0F2F8;
+    --light--hover: #7C7E83;
 }
  
 html, body{
@@ -12,14 +15,14 @@ html, body{
     padding: 0;
 }
   
-body, #root{
+body{
     height: 100vh;
     background-color: var(--dark);
     font-family: 'Heebo', sans-serif;
 }
 
-h1, p{
-    color: #F0F2F8;
+#root{
+    height: 100%;
 }
 
 main{

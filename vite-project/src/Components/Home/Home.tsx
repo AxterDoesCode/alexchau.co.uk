@@ -1,11 +1,13 @@
-import "./Home.css"
+import Title from "./SubComponents/Title"
+import Section from "./SubComponents/Section"
+
 export default function Home (){
     return(
         <main>
-            <div className="home--title">
-                <h1 className="home--h1">Hello</h1> 
-                <h1 className="home--h1">I'm <span className="home--name">Alex</span></h1>   
-            </div>
+            <Section>
+                <Title>Hello</Title>
+                <Title>I'm <span className="home--name">Alex</span></Title>
+            </Section>
         </main>
     )
 }

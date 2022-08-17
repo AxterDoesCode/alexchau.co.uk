@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom"
-import { useState, useEffect } from "react"
-import "./Header.css"
+import Nav from "./SubComponents/Nav"
+import LogoName from "./SubComponents/LogoName"
+import styled from "styled-components/macro"
+
+const StyledHeader = styled.header`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:"blank nav name";
+  padding: 2em;
+  align-items: center;
+  height: 10%;
+`
 export default function Header(){
-
-  function changeActiveLink(e: any){
-    document.querySelector(".current")?.classList.remove("current")
-    e.target.classList.add("current")
-  }
-
   return(
-    <header>
-      <nav className="header--nav">
-        <Link to="/" className="nav--link current" onClick={changeActiveLink}>Home</Link>
-        <Link to="about" className="nav--link" onClick={changeActiveLink}>About</Link>
-        <Link to="projects" className="nav--link" onClick={changeActiveLink}>Projects</Link>
-        <Link to="contact" className="nav--link" onClick={changeActiveLink}>Contact</Link>  
-      </nav>
-      <p className='header--name'>alex.chau</p>
-    </header>
+    <StyledHeader>
+      <Nav />
+      <LogoName text="alex.chau"/>
+    </StyledHeader>
   )
 }
