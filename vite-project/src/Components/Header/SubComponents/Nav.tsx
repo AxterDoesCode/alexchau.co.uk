@@ -28,6 +28,12 @@ const StyledNav = styled.nav`
     .nav--link:hover{
         color: var(--light--hover);
     }
+
+    @media(max-width: 390px){
+        .nav--link{
+            font-size: 1.2rem;
+        }
+    }
     
     .current{
         background-color: var(--dark--hover);
