@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
     color: var(--light);
-    max-height: 10%;
+    height: 10%;
     font-size: 3rem;
     display: flex;
     justify-content: flex-end;
