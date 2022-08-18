@@ -16,6 +16,11 @@ const StyledFooter = styled.footer`
         color: inherit;
         margin: 0;
         padding: 0;
+        transition: all 0.2s ease;
+    }
+
+    a:hover{
+        color: var(--light--hover);
     }
 `
 
