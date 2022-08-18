@@ -34,19 +34,25 @@ main{
 .animate-rise{
     animation: animate-rise 0.4s ease-in;
     animation-fill-mode: backwards;
+    -webkit-animation: animate-rise 0.4s ease-in;
+    -webkit-animation-fill-mode: backwards;
 }
 
 .animate-fall{
     animation: animate-fall 0.6s ease-in;
     animation-fill-mode: backwards;
+    -webkit-animation: animate-fall 0.6s ease-in;
+    -webkit-animation-fill-mode: backwards;
 }
 
 .delay04{
     animation-delay: .4s;
+    -webkit-animation-delay: .4s;
 }
 
 .delay06{
     animation-delay: .6s;
+    -webkit-animation-delay: .6s;
 }
 
 @keyframes animate-rise{
