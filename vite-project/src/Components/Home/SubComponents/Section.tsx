@@ -8,6 +8,14 @@ const StyledSection = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
+
+    @media(max-height: 570px){
+        font-size: 3rem;
+    }
+
+    @media(max-height: 450px){
+        font-size: 2rem;
+    }
 `
 
 function Section({children}: any){
