@@ -5,7 +5,7 @@ const StyledFooter = styled.footer`
     max-height: 10%;
     font-size: 3rem;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding-right: 1em;
     gap: .5em;
@@ -21,6 +21,10 @@ const StyledFooter = styled.footer`
 
     a:hover{
         color: var(--light--hover);
+    }
+
+    @media(max-width: 700px){
+        height: 20%;
     }
 `
 
