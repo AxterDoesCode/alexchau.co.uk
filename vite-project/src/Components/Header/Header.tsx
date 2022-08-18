@@ -9,6 +9,10 @@ const StyledHeader = styled.header`
   padding: 2em;
   align-items: center;
   height: 10%;
+
+  @media(max-width: 700px){
+    height: 20%;
+  }
 `
 export default function Header(){
   return(

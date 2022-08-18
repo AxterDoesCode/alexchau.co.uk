@@ -63,6 +63,10 @@ main{
     html{
         font-size: 14px;
     }
+
+    main{
+        height: 80%;
+    }
 }
 
 @media (max-width: 390px){
