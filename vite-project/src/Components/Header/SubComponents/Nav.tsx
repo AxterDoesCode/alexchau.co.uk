@@ -22,6 +22,7 @@ const StyledNav = styled.nav`
         color: var(--light);
         padding: 0.5em 1em;
         border-radius: 2em;
+        transition: all 0.2s linear;
     }
     
     .nav--link:hover{

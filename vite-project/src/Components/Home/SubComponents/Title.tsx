@@ -11,9 +11,9 @@ const StyledTitle = styled.h1`
     }
 `
 
-function Title({children}: any){
+function Title({children, className}: any){
     return(
-        <StyledTitle>
+        <StyledTitle className={className}>
             {children}
         </StyledTitle>
     )
