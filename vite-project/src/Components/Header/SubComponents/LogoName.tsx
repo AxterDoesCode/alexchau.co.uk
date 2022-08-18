@@ -8,6 +8,10 @@ const StyledLogoName = styled.p`
     display: flex;
     justify-self: end;
     font-family: 'Lobster Two', cursive;
+
+    @media(max-width:700px){
+        display: none;
+    }
 `
 
 function LogoName({text}: any){

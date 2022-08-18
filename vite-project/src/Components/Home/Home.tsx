@@ -5,8 +5,8 @@ export default function Home (){
     return(
         <main>
             <Section>
-                <Title className="animate">Hello</Title>
-                <Title className="animate delay04">I'm <span className="home--name">Alex</span></Title>
+                <Title className="animate-rise">Hello</Title>
+                <Title className="animate-rise delay04">I'm <span className="home--name">Alex</span></Title>
             </Section>
         </main>
     )

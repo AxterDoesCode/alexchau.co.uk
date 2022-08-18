@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
 `
 export default function Header(){
   return(
-    <StyledHeader>
+    <StyledHeader className="animate-fall delay06">
       <Nav />
       <LogoName text="alex.chau"/>
     </StyledHeader>
