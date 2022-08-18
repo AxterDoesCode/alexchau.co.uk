@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1em;
+    padding-right: .66em;
     gap: .5em;
     overflow: hidden;
 
