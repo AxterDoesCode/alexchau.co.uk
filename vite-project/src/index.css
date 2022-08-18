@@ -28,7 +28,7 @@ body{
 }
 
 main{
-    height: 90%;
+    height: 80%;
 }
 
 .animate-rise{
@@ -50,12 +50,12 @@ main{
 }
 
 @keyframes animate-rise{
-    from{opacity: 0; transform: translateY(30vh);}
+    from{opacity: 0; transform: translateY(30%);}
     to{opacity: 1; transform: translateY(0);}
 }
 
 @keyframes animate-fall {
-    from{opacity: 0; transform: translateY(-30vh);}
+    from{opacity: 0; transform: translateY(-30%);}
     to{opacity: 1; transform: translateY(0);}
 }
 
@@ -65,7 +65,7 @@ main{
     }
 
     main{
-        height: 80%;
+        height: 70%;
     }
 }
 

@@ -4,7 +4,7 @@ import Projects from "./Components/Projects/Projects"
 import Contact from "./Components/Contact/Contact"
 import Header from "./Components/Header/Header"
 import {Routes, Route} from "react-router-dom"
-
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   return(
@@ -16,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />}/>
         <Route path="/contact" element={<Contact />}/>
       </Routes>
+      <Footer/>
     </>
   )
 }
