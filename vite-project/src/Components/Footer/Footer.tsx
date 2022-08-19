@@ -30,7 +30,7 @@ const StyledFooter = styled.footer`
 
 export default function Footer(){
     return(
-        <StyledFooter className="animate-rise delay06">
+        <StyledFooter className="animate-fly-right delay06">
             <a href="https://www.linkedin.com/in/alex-chau-dev/">
                 <i className="fa-brands fa-linkedin"></i>
             </a>
