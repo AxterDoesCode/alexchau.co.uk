@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { useLocation } from "react-router-dom"
 
 const StyledFooter = styled.footer`
     color: var(--light);
@@ -28,16 +29,24 @@ const StyledFooter = styled.footer`
     }
 `
 
-export default function Footer(){
-    return(
-        <StyledFooter className="animate-fly-right delay06">
-            <a href="https://www.linkedin.com/in/alex-chau-dev/">
-                <i className="fa-brands fa-linkedin"></i>
-            </a>
+export default function Footer(props: any){
+    console.log(props.currentPath)
+    if(props.currentPath === "/"){
+        return(
+            <StyledFooter className="animate-fly-right delay06">
+                <a href="https://www.linkedin.com/in/alex-chau-dev/">
+                    <i className="fa-brands fa-linkedin"></i>
+                </a>
 
-            <a href="https://github.com/AxterDoesCode">
-                <i className="fa-brands fa-square-github"></i>
-            </a>
-        </StyledFooter>
-    )
+                <a href="https://github.com/AxterDoesCode">
+                    <i className="fa-brands fa-square-github"></i>
+                </a>
+            </StyledFooter>
+        )
+    }else{
+        return(
+            <>
+            </>
+        )
+    }
 }

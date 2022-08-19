@@ -3,10 +3,12 @@ import About from "./Components/About/About"
 import Projects from "./Components/Projects/Projects"
 import Contact from "./Components/Contact/Contact"
 import Header from "./Components/Header/Header"
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, useLocation} from "react-router-dom"
 import Footer from "./Components/Footer/Footer"
 
 function App() {
+  const currentPath = useLocation().pathname
+
   return(
     <>
       <Header />
@@ -16,7 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />}/>
         <Route path="/contact" element={<Contact />}/>
       </Routes>
-      <Footer/>
+      <Footer currentPath={currentPath}/>
     </>
   )
 }
