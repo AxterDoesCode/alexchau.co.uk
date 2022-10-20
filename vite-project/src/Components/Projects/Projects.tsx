@@ -39,6 +39,7 @@ export default function Projects(){
             <StyledH2 className="animate-rise delay04">What I'm working on</StyledH2>
             <StyledP className="animate-fade delay06">
                 University term has started so I'm learning C and developing my knowledge in algorithms.
+                Also looking for an internship/placement currently.
             </StyledP>
         </StyledMain>
     )
